@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;0,900;1,900&amp;family=Manrope:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "secondary": "#77574d",
+                        "outline-variant": "#d0c5af",
+                        "on-primary-fixed-variant": "#574500",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#795950",
+                        "surface-container-high": "#efe7d9",
+                        "tertiary-container": "#ceab9f",
+                        "on-tertiary-fixed": "#2a170f",
+                        "secondary-container": "#fed3c7",
+                        "surface-container": "#f5edde",
+                        "surface-container-low": "#fbf3e4",
+                        "on-error-container": "#93000a",
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "inverse-surface": "#343026",
+                        "tertiary-fixed-dim": "#e3bfb2",
+                        "surface": "#fff8ef",
+                        "primary-fixed-dim": "#e9c349",
+                        "on-tertiary-container": "#583f35",
+                        "on-secondary-fixed": "#2c160e",
+                        "on-surface": "#1e1b13",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#e1d9cb",
+                        "on-surface-variant": "#4d4635",
+                        "inverse-primary": "#e9c349",
+                        "primary-container": "#d4af37",
+                        "error": "#ba1a1a",
+                        "outline": "#7f7663",
+                        "background": "#fff8ef",
+                        "surface-tint": "#735c00",
+                        "primary": "#735c00",
+                        "on-primary-container": "#554300",
+                        "secondary-fixed-dim": "#e7bdb1",
+                        "on-tertiary-fixed-variant": "#5a4137",
+                        "on-primary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-background": "#1e1b13",
+                        "inverse-on-surface": "#f8f0e1",
+                        "tertiary": "#74584e",
+                        "on-secondary-fixed-variant": "#5d4037",
+                        "surface-container-highest": "#e9e2d3",
+                        "surface-variant": "#e9e2d3",
+                        "primary-fixed": "#ffe088",
+                        "surface-bright": "#fff8ef",
+                        "secondary-fixed": "#ffdbd0",
+                        "on-primary-fixed": "#241a00",
+                        "tertiary-fixed": "#ffdbce"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .ikat-overlay {
+            background-image: radial-gradient(#d4af37 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+            opacity: 0.05;
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-background font-body selection:bg-primary-container/30">
+    <!-- Top Navigation Bar -->
+    <header class="fixed top-0 w-full z-50 bg-[#fff8ef]/80 backdrop-blur-xl shadow-[0_10px_30px_rgba(115,92,0,0.05)]">
+        <div class="flex items-center justify-between px-6 py-4 w-full max-w-screen-2xl mx-auto">
+            <span class="material-symbols-outlined text-[#735c00] active:scale-95 duration-200">menu</span>
+            <h1 class="font-['Noto_Serif'] text-[#735c00] font-black italic text-2xl tracking-tight">Uch BaQaLoQ</h1>
+            <div class="w-6"></div> <!-- Spacer for centering -->
+        </div>
+        <div class="bg-gradient-to-b from-[#d0c5af]/20 to-transparent h-px w-full"></div>
+    </header>
+    <main class="pt-24 pb-32">
+        <!-- Hero Section -->
+        <section class="px-6 mb-12">
+            <div class="relative h-64 rounded-xl overflow-hidden shadow-xl mb-6">
+                <img alt="Traditional Uzbek Table" class="w-full h-full object-cover"
+                    data-alt="A beautiful spread of traditional Uzbek dishes on a colorful table"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJHaRhPTnbxTXBbmytVs4ZOcXqZCpBYXcQ1M4zT20DZDakllbPamDIqOACCe1-SygWRCVO1rLKo3wNLKhUFKtSnjcdZvnbPAr5YQR3Rhl9ooTPKLdVdYjy-8bMO3PuWl8TaPLTnWnK_uMiHGI24PPCtfhfb6aMHIPMBOnjyl9v7B2tIWZD5Lnli49nI5VgascufEpsy7xAaCBWstvPXlqX18ZOCOuoQqpnRezrw4aUBkeWkiAfMkZh14ED-ryAzq_xVr-SkXoSVoPH" />
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-on-background/80 to-transparent flex flex-col justify-end p-6">
+                    <p class="text-primary-container font-headline italic text-lg mb-1">Authentic Flavors</p>
+                    <h2 class="text-surface font-headline font-bold text-3xl">Traditional Menu</h2>
+                </div>
+            </div>
+            <!-- Quick Navigation (Section Anchor Links) -->
+            <nav class="flex gap-4 overflow-x-auto no-scrollbar py-2 -mx-6 px-6">
+                <a class="flex-shrink-0 px-5 py-2 rounded-full bg-surface-container-high border border-outline-variant/20 text-on-surface-variant font-semibold text-sm hover:bg-primary-container hover:text-on-primary-container transition-all"
+                    href="#drinks">Drinks</a>
+                <a class="flex-shrink-0 px-5 py-2 rounded-full bg-surface-container-high border border-outline-variant/20 text-on-surface-variant font-semibold text-sm"
+                    href="#starters">Starters</a>
+                <a class="flex-shrink-0 px-5 py-2 rounded-full bg-surface-container-high border border-outline-variant/20 text-on-surface-variant font-semibold text-sm"
+                    href="#main-courses">Main Courses</a>
+                <a class="flex-shrink-0 px-5 py-2 rounded-full bg-surface-container-high border border-outline-variant/20 text-on-surface-variant font-semibold text-sm"
+                    href="#desserts">Desserts</a>
+                <a class="flex-shrink-0 px-5 py-2 rounded-full bg-surface-container-high border border-outline-variant/20 text-on-surface-variant font-semibold text-sm"
+                    href="#specials">Specials</a>
+            </nav>
+        </section>
+        <!-- Drinks Section -->
+        <section class="mb-12" id="drinks">
+            <div class="px-6 mb-6 flex items-center justify-between">
+                <h3 class="font-headline text-2xl font-bold text-primary">Drinks</h3>
+                <div class="h-px flex-grow ml-4 bg-outline-variant/30"></div>
+            </div>
+            <div class="space-y-4 px-6">
+                <!-- Item Card -->
+                <div
+                    class="bg-surface-container-lowest rounded-xl overflow-hidden flex gap-4 p-3 shadow-sm border-r-4 border-primary-container">
+                    <div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0">
+                        <img class="w-full h-full object-cover" data-alt="Uzbek green tea in traditional bowl"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkD_SfRp87rS9BcfrZPRb7ehEJYSFRpzXPVgzEVyFFbUargk1u-kejwC_MVUedOmgRO6wzgR7wGwvefd9aq1e22FSdGrOLycVazjNxomiUdcFnw5Gad2KszaMtDUZnO0w1oUFSQDlIZf8HJT3w0x75mprvqkb6YllX4q_QusfFyk9uO-Xrc3yeEy0JBpysarf-80pb04fN8t9mrLu7n3TXq1nBvK3LJzR51vPcwKNUhbC1JLhKLstENysYF18ykXb1XMlU924t17aJ" />
+                    </div>
+                    <div class="flex flex-col justify-between py-1 flex-grow">
+                        <div>
+                            <h4 class="font-bold text-on-surface">Kok Choy</h4>
+                            <p class="text-xs text-secondary leading-tight mt-1">Authentic green tea served in a
+                                traditional piala.</p>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-primary text-sm">15,000 UZS</span>
+                            <span class="material-symbols-outlined text-sm text-primary-container"
+                                style="font-variation-settings: 'FILL' 1;">add_circle</span>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-surface-container-lowest rounded-xl overflow-hidden flex gap-4 p-3 shadow-sm border-r-4 border-primary-container">
+                    <div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0">
+                        <img class="w-full h-full object-cover" data-alt="Traditional fruit compote"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiZR2N2wXxGUq_SBMdc68w8mD2XaEjTtDugKZ_UC-IgwsvaVlGwpom5qyxmeSmVaVG2unCNmdhxTUWCZrNm4HeujhCJ04LoERKCEMf_t9OB2Pr8RrgIYtS0X-pmkBoTX82UuSqGimxO1og_U5A8X4xzPymg7I02lKK1dsS9ODQ13PvJ-S16XBkMhLmLE8YM2IeFmVzv3p2RhYznUit-mCuivms7-4dyu2oTvtsvPJo9lde0r5ekv0yfXsD1Z2JuzCKNVfZtv4sYf7s" />
+                    </div>
+                    <div class="flex flex-col justify-between py-1 flex-grow">
+                        <div>
+                            <h4 class="font-bold text-on-surface">Uzbek Kompot</h4>
+                            <p class="text-xs text-secondary leading-tight mt-1">Sweet house-made fruit drink from
+                                sun-dried apricots.</p>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-primary text-sm">22,000 UZS</span>
+                            <span class="material-symbols-outlined text-sm text-primary-container"
+                                style="font-variation-settings: 'FILL' 1;">add_circle</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Starters Section -->
+        <section class="mb-12" id="starters">
+            <div class="px-6 mb-6 flex items-center justify-between">
+                <h3 class="font-headline text-2xl font-bold text-primary">Starters</h3>
+                <div class="h-px flex-grow ml-4 bg-outline-variant/30"></div>
+            </div>
+            <div class="space-y-4 px-6">
+                <div
+                    class="bg-surface-container-lowest rounded-xl overflow-hidden flex gap-4 p-3 shadow-sm border-r-4 border-primary-container">
+                    <div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0">
+                        <img class="w-full h-full object-cover" data-alt="Crispy Somsa triangles"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIT5VMDeZEIjcqFA0GnorRwY11MDTMdTRSxYu2HY2FwXZYn6l_UUrVzAicDxsDASw1wlI0bvmshLKqoCo_LYmXyYavJNQXSVMyMuj9OTqzRO_PaTSBIOi8XlKfvDC2zE-tmN1KnOabamTgfRIaGjPSeY9ou-udjXKkUFIERQFYZKYBfyyGUZ-NtY1gATHu9ZG3NkZ_tnXfuk69d84vl59PZdVTP_4T5dXhksFceG-apxyMiCJPK5wHc3VsVemFwuk1sfWGOAPNMB6W" />
+                    </div>
+                    <div class="flex flex-col justify-between py-1 flex-grow">
+                        <div>
+                            <h4 class="font-bold text-on-surface">Meat Somsa</h4>
+                            <p class="text-xs text-secondary leading-tight mt-1">Flaky pastry filled with minced lamb
+                                and onions.</p>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-primary text-sm">28,000 UZS</span>
+                            <span class="material-symbols-outlined text-sm text-primary-container"
+                                style="font-variation-settings: 'FILL' 1;">add_circle</span>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-surface-container-lowest rounded-xl overflow-hidden flex gap-4 p-3 shadow-sm border-r-4 border-primary-container">
+                    <div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0">
+                        <img class="w-full h-full object-cover" data-alt="Fresh vegetable salad"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBTIWRszMQsf59sRy9XQkw7pbCYEacSgPd209D647QSJ-k-FNlYUhBunV8TliBwwINCefnccuDaP4kComUjwmnGAO2CKIUMqNP5fT6DZvHieMPIzZftxIlj8M7z7IbVL1U2Bd_onTXfcMLkDfs2LgXIXkb2SfuBODlx0t4jmIq90Ny1_EVpzbNPjZ6-ACHgLbYFRl-t0gd2a1qqGcFL5V-MHG6nHnctcK_BOyjZdVt_hcX7jr9ntjMCUF1MDijec3cS72UJy6fEALu" />
+                    </div>
+                    <div class="flex flex-col justify-between py-1 flex-grow">
+                        <div>
+                            <h4 class="font-bold text-on-surface">Achichuk Salad</h4>
+                            <p class="text-xs text-secondary leading-tight mt-1">Fresh tomatoes, onions, and spicy
+                                peppers.</p>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-primary text-sm">35,000 UZS</span>
+                            <span class="material-symbols-outlined text-sm text-primary-container"
+                                style="font-variation-settings: 'FILL' 1;">add_circle</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Main Courses Section -->
+        <section class="mb-12 relative overflow-hidden" id="main-courses">
+            <div class="ikat-overlay absolute inset-0 -z-10"></div>
+            <div class="px-6 mb-6 flex items-center justify-between">
+                <h3 class="font-headline text-2xl font-bold text-primary">Main Courses</h3>
+                <div class="h-px flex-grow ml-4 bg-outline-variant/30"></div>
+            </div>
+            <div class="space-y-4 px-6">
+                <div
+                    class="bg-surface-container-lowest rounded-xl overflow-hidden flex gap-4 p-3 shadow-sm border-r-4 border-primary-container">
+                    <div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0">
+                        <img class="w-full h-full object-cover" data-alt="Traditional Uzbek Plov rice dish"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGLbaZjnhYFROe6XvY_pvK1afANT0OoL8Ym8VzlYLtyzVzanzE6BmL2dU_vUKxNVV_lJxLiK_bLYuZTPHhaNxeBYARuWqRXKYK2DF_Y4yLRZTz-FMfcTJwwXEnVGwxthgVgByffLnuqgj1rwvAtzUynggZoLBp08arzopOzDTipMydaJJaiM2-4T4klrB2hOfyI7EO3ikzvTlO3kGgxUUALmxErqdHS3vz-aUJjOzo2Ji-IM_DUteclHZ-SgPky2epUL__9B36cbIR" />
+                    </div>
+                    <div class="flex flex-col justify-between py-1 flex-grow">
+                        <div>
+                            <h4 class="font-bold text-on-surface">Tashkent Plov</h4>
+                            <p class="text-xs text-secondary leading-tight mt-1">Legendary rice dish with lamb, carrots,
+                                and chickpeas.</p>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-primary text-sm">65,000 UZS</span>
+                            <span class="material-symbols-outlined text-sm text-primary-container"
+                                style="font-variation-settings: 'FILL' 1;">add_circle</span>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-surface-container-lowest rounded-xl overflow-hidden flex gap-4 p-3 shadow-sm border-r-4 border-primary-container">
+                    <div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0">
+                        <img class="w-full h-full object-cover" data-alt="Shashlik grilled meat skewers"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhdFunlLuP0lz_IiYz9m7HOZe1A92xXTEdSsfaJWQdxmvDT6h_dLLoPJ2t-_XQ-H2pQcqGOs6-WVxJ_P1Kbf7HO0lnuURSxVEKI4qXKisdj67C_BSQXBxH2NnpnDrgmSSelI20BiekYO0Zk9xr1FqquRZp4UQ9Os1mDk5GgGTi2bHi2acgxwH_NuKBT3fLRv4s73bXSREkC5WNVbLncFmOL_VvJiYvBg0sOJwa3qt3f2nPyIk3Th9XFojNYs5TyvrfZd5n_NrYrQ89" />
+                    </div>
+                    <div class="flex flex-col justify-between py-1 flex-grow">
+                        <div>
+                            <h4 class="font-bold text-on-surface">Lamb Shashlik</h4>
+                            <p class="text-xs text-secondary leading-tight mt-1">Two skewers of marinated lamb grilled
+                                over coals.</p>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-primary text-sm">58,000 UZS</span>
+                            <span class="material-symbols-outlined text-sm text-primary-container"
+                                style="font-variation-settings: 'FILL' 1;">add_circle</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Desserts Section -->
+        <section class="mb-12" id="desserts">
+            <div class="px-6 mb-6 flex items-center justify-between">
+                <h3 class="font-headline text-2xl font-bold text-primary">Desserts</h3>
+                <div class="h-px flex-grow ml-4 bg-outline-variant/30"></div>
+            </div>
+            <div class="space-y-4 px-6">
+                <div
+                    class="bg-surface-container-lowest rounded-xl overflow-hidden flex gap-4 p-3 shadow-sm border-r-4 border-primary-container">
+                    <div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0">
+                        <img class="w-full h-full object-cover" data-alt="Traditional Baklava pastries"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_6w5_Fv_SSNodVyrKE6yLX8meeHwg4qCczB-UtQyAuUkixoq5zLepMxeTfPbcdNGId_c-IAjqIOHyEIj_fYkOMDJSxMv86fa99obSazRFflaBv3IGLJNyTlsYoWrKCDglI86xY1gibrOaTraZugvIkGMrgPxOdCf2ksHTK8U4j7fqKbuS-B-gTDFVMEyqWxdXVqFGN9UnGkbPNv_1t23Jf4WDYZUc98dJpOT2mlS4lP8CQz2BlFwNTkOQqng-P_wZr7C6XYMUyYiJ" />
+                    </div>
+                    <div class="flex flex-col justify-between py-1 flex-grow">
+                        <div>
+                            <h4 class="font-bold text-on-surface">Honey Baklava</h4>
+                            <p class="text-xs text-secondary leading-tight mt-1">Rich layers of phyllo with honey and
+                                chopped nuts.</p>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-primary text-sm">42,000 UZS</span>
+                            <span class="material-symbols-outlined text-sm text-primary-container"
+                                style="font-variation-settings: 'FILL' 1;">add_circle</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full pt-16 pb-24 px-8 bg-[#fbf3e4] text-[#735c00] border-t border-[#d0c5af]/20">
+        <div class="flex flex-col items-center gap-6 text-center w-full">
+            <span class="font-['Noto_Serif'] text-lg font-bold text-[#735c00]">Uch BaQaLoQ</span>
+            <div class="flex gap-6">
+                <a class="text-[#77574d] hover:text-[#735c00] underline decoration-[#d4af37] decoration-2 underline-offset-4 font-['Manrope'] text-sm"
+                    href="#">Instagram</a>
+                <a class="text-[#77574d] hover:text-[#735c00] underline decoration-[#d4af37] decoration-2 underline-offset-4 font-['Manrope'] text-sm"
+                    href="#">Telegram</a>
+            </div>
+            <p class="font-['Manrope'] text-sm leading-relaxed opacity-70">© 2024 Uč BaQaLoQ. Crafted with Heritage.</p>
+        </div>
+    </footer>
+    <!-- Bottom Navigation Bar -->
+    <nav
+        class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-[#fff8ef]/90 backdrop-blur-2xl shadow-[0_-10px_40px_rgba(115,92,0,0.08)] rounded-t-3xl border-t border-[#d0c5af]/10 z-50">
+        <a class="flex flex-col items-center justify-center text-[#77574d]/70 transition-all active:translate-y-0.5"
+            href="{% url 'home' %}">
+            <span class="material-symbols-outlined mb-1">home</span>
+            <span class="font-['Manrope'] text-[11px] font-semibold uppercase tracking-wider">Home</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-[#735c00] bg-[#fbf3e4] rounded-xl px-4 py-1 transition-all active:translate-y-0.5"
+            href="{% url 'menu' %}">
+            <span class="material-symbols-outlined mb-1">restaurant_menu</span>
+            <span class="font-['Manrope'] text-[11px] font-semibold uppercase tracking-wider">Menu</span>
+        </a>
+        </a>
+    </nav>
+</body>
+
+</html>
